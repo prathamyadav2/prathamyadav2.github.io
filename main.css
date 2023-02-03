@@ -1,5 +1,6 @@
 html, body {
-    cursor: url('https://res.cloudinary.com/dbpwbtkis/image/upload/v1566485124/cursor_anmfyz.png'), auto !important;
+    /* cursor: url('https://res.cloudinary.com/dbpwbtkis/image/upload/v1566485124/cursor_anmfyz.png'), auto !important; */
+    cursor: default;
 }
 
 * {
