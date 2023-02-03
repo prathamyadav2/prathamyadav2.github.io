@@ -51,6 +51,11 @@ video {
     font-size: 80px !important;
 }
 
+.header h1::selection {
+    color: #1b1b1b;
+    background: #d3ae87;
+}
+
 @media(max-width: 900px) {
     .header {
           left: 50%;
@@ -244,6 +249,11 @@ video {
     width: 100%;
 }
 
+.story *::selection {
+    color: #fff;
+    background: grey;
+}
+
 section {
     padding: 140px 0;
 }
@@ -291,6 +301,11 @@ button {
     background: #161616;
 }
 
+.services *::selection {
+    color: #161616;
+    background: rgb(182, 182, 182);
+}
+
 .service {
     margin: 30px 0;
 }
@@ -316,6 +331,11 @@ button {
 
 .team-member, .team-img {
     position: relative;
+}
+
+.team *::selection {
+    color: #fff;
+    background: grey;
 }
 
 .team-img {
@@ -358,6 +378,11 @@ button {
 .newsletter {
     padding: 140px 0;
     background: #161616;
+}
+
+.newsletter *::selection {
+    color: #161616;
+    background: #fff;
 }
 
 .newsletter input {
@@ -407,6 +432,11 @@ button {
 
 #contact-form {
     margin: 5% 0;
+}
+
+.contact *::selection {
+    color: #fff;
+    background: rgb(97, 97, 97);
 }
 
 .contact .icon-title {
@@ -465,6 +495,11 @@ textarea:focus {
 
 .footer {
     background: #161616;
+}
+
+.footer *::selection {
+    color: #161616;
+    background: #fff;
 }
 
 #media, #address, #mail {
