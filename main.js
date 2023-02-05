@@ -52,4 +52,30 @@ $('a[href*="#"]')
                 });
             }
         }
-    });
+    }
+);
+
+
+
+const counters = document.querySelectorAll(/*'.stats-value'*/);
+const speed = [ 400, 1400 ];
+
+setTimeout(() => {
+counters.forEach( (counter, index) => {
+    const animate = () => {
+        const value = +counter.getAttribute('data-value');
+        const data = +counter.innerText;
+        
+        const time = value / speed[index];
+        console.log(index, time);
+        if (data < value) {
+            counter.innerText = Math.ceil(data + time);
+            setTimeout(animate, 1);
+        } else{
+            counter.innerText = value;
+        }
+        
+    }
+    animate();
+});
+}, 2000)
